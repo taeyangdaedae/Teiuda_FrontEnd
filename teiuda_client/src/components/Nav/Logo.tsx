@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-export default () => {
+const Logo = () => {
   const Title = styled.div`
     padding-top: 15%;
     color: #0d3c26;
@@ -15,3 +15,4 @@ export default () => {
   `;
   return <Title> 틔우다.</Title>;
 };
+export { Logo };

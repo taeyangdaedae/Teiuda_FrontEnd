@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import Nav from "./Nav";
-import Logo from "./Logo";
-export function NavBar() {
+import { Content } from "./Content";
+import { Logo } from "./Logo";
+
+const Nav = () => {
   const Divider = styled.hr`
     position: relative;
     width: 80px;
@@ -13,7 +14,7 @@ export function NavBar() {
   `;
   const Wrapper = styled.div`
     display: grid;
-    grid-template-rows: 0.3fr 0.7fr 9fr;
+    grid-template-rows: 0.2fr 0.2fr 9.6fr;
     border-right: 1px solid #735a19;
   `;
 
@@ -21,7 +22,8 @@ export function NavBar() {
     <Wrapper>
       <Logo />
       <Divider />
-      <Nav />
+      <Content />
     </Wrapper>
   );
-}
+};
+export { Nav };
