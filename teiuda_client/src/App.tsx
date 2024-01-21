@@ -1,17 +1,14 @@
 import React from "react";
 import "./App.css";
-import { NavBar } from "./components/container/NavBar";
-// import Nav from "./components/container/Nav";
+import Router from "@/routes";
+import { Nav } from "@/components";
 
 function App() {
   return (
-    <div className="body">
-      <NavBar />
-      <div className="Main"> Main </div>
+    <div className="App">
+      <Nav />
+      <Router />
     </div>
-    <Router>
-      
-    </Router>
   );
 }
 

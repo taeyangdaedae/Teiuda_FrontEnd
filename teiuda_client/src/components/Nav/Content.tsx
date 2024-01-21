@@ -18,13 +18,15 @@ const Content = () => {
   return (
     <Wrapper>
       <MyProfile>
-        {window.location.pathname !== "/intro" ? (
+        {window.location.pathname !== "/home" ? (
           <img
             src={profile_img}
             alt="profile_img"
             onClick={() => alert("클릭")}
           />
-        ) : null}
+        ) : (
+          <div />
+        )}
       </MyProfile>
     </Wrapper>
   );

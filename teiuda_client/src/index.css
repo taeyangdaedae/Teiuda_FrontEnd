@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "NanumMyeongjo";
+  font-weight: normal;
+  src: url("./fonts/NanumMyeongjo.ttf") format("truetype");
+}
+
+App {
+  font-family: "NanumMyeongjo";
+  -webkit-text-size-adjust: 100%;
+}

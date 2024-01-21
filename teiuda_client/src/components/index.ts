@@ -1,5 +1,5 @@
 import { Nav } from "./Nav";
 import { ThinkBoard } from "./Think";
-import { IntroLoginBtn } from "./Button";
+import { IntroBtn } from "./Button";
 
-export { Nav, ThinkBoard, IntroLoginBtn };
+export { Nav, ThinkBoard, IntroBtn };

@@ -1,3 +1,5 @@
-import { IntroLoginBtn } from "./IntroLoginBtn";
+import { IntroBtn } from "./IntroBtn";
+import { ToggleBtn } from "./ToggleBtn";
+import { CommonBtn } from "./CommonBtn";
 
-export { IntroLoginBtn };
+export { IntroBtn, ToggleBtn, CommonBtn };

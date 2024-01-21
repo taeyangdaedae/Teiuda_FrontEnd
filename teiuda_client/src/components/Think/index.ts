@@ -1,3 +1,3 @@
 import { ThinkBoard } from "./ThinkBoard";
-
-export { ThinkBoard };
+import { Topic } from "./Topic";
+export { ThinkBoard, Topic };
