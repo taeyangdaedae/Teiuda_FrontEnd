@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Helmet } from "react-helmet";
 import { ThinkBoard } from "@/components";
 import { IntroBtn } from "@/components";
 import authService from "@/api/service/auth.service";
@@ -22,15 +23,20 @@ const Home = () => {
   `;
 
   return (
-    <Wrapper>
-      <ThinkBoard isLoggedIn={isLoggedIn()} />
-      <Bottom>
-        <div />
-        <IntroBtn value="로그인" />
-        <IntroBtn value="회원가입" />
-        <div />
-      </Bottom>
-    </Wrapper>
+    <div>
+      <Helmet>
+        <title>메인페이지</title>
+      </Helmet>
+      <Wrapper>
+        <ThinkBoard isLoggedIn={isLoggedIn()} />
+        <Bottom>
+          <div />
+          <IntroBtn value="로그인" />
+          <IntroBtn value="회원가입" />
+          <div />
+        </Bottom>
+      </Wrapper>
+    </div>
   );
 };
 

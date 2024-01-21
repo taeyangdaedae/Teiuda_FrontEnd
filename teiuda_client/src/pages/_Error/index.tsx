@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import { useNavigate } from "react-router-dom";
 
 const NotFound = () => {
@@ -14,6 +15,9 @@ const NotFound = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>에러페이지</title>
+      </Helmet>
       <h2>404 Not Found</h2>
       <button onClick={handleError}>돌아가기</button>
     </div>
