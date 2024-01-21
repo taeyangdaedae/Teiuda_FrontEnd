@@ -1,7 +1,4 @@
 import axios from "axios";
-import dotenv from "dotenv";
-
-dotenv.config();
 
 const DEV_SERVER_IP = process.env.DEV_SERVER_IP;
 const DEV_SERVER_PORT = process.env.DEV_SERVER_PORT;
